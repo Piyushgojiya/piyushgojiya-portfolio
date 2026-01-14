@@ -1,0 +1,119 @@
+body {
+            scroll-behavior: smooth;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            transition: all 0.3s ease;
+        }
+
+        /* HOME SECTION */
+        .home-section {
+            height: 100vh;
+            background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .overlay {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-title {
+            animation: slideDown 1.2s ease;
+        }
+
+        .hero-subtitle {
+            animation: fadeIn 2s ease;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-40px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* CARD HOVER */
+        .card {
+            border: none;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        /* BUTTON */
+        .btn {
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* SKILLS ICON GRID */
+        .skill-box {
+            padding: 25px 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-box img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        .skill-box h6 {
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-8px);
+        }
+
+        /* CONTACT SECTION */
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            width: 200px;
+            justify-content: center;
+        }
+
+        .contact-link i {
+            font-size: 1.5rem;
+        }
+
+        .contact-link.whatsapp { background-color: #25D366; }
+        .contact-link.instagram { background-color: #E1306C; }
+        .contact-link.facebook { background-color: #1877F2; }
+        .contact-link.twitter { background-color: #1DA1F2; }
+
+        .contact-link:hover {
+            transform: scale(1.05);
+            filter: brightness(1.2);
+            text-decoration: none;
+            color: #fff;
+        }
+
+        footer {
+            letter-spacing: 1px;
+        }
